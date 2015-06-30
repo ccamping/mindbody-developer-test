@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Urban Yoga</title>
+<link href="urban-yoga.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id="main-container">
+		<header>
+			<!--logo-->
+			<a href="index.html">
+				<img src="images/logo.png" alt="Urban Yoga"/>
+			</a>
+			<!--Tab Navigation-->
+				<nav class="main">
+					<ul>
+						<li class="selected"><a href="#dashboard" class="selected">Dashboard</a></li>	
+						<li><a href="#signin">Sign In</a></li>
+						<li><a href="#classes">Classes</a></li>
+						<li><a href="#workshops">Workshops</a></li>
+						<li><a href="#appointments">Appointments</a></li>
+						<li><a href="#clienthome">Client Home</a></li>
+						<li style="border-right: none;"><a href="#retail">Retail</a></li>
+					</ul> 
+				</nav><!--end of main nav-->
+				<nav class="dashboard">
+					<ul>
+						<li><a href="#dashboard">Dashboard</a></li>
+						<li><a href="#business-overview" class="selected">Business Overview</a></li>
+						<li><a href="#schedule">Schedule</a></li>
+						<li><a href="#reports">Reports</a></li>
+					</ul>
+				</nav><!--end of dashboard-nav-->
+		</header>
+		<div class="main-content">
+			<div class="new-program-button">
+				<a id="show-panel" href="#">
+					<img src="images/plus_icon.png" alt="New Program"/>
+					<p>New Program</p>
+				</a>
+			</div><!--end of new program button div-->
+
+			<!--Programs-->
+			<div class="program">
+				<a href="#edit">
+					<div class="pencil-button">
+					</div>
+				</a>
+				<h1>Yoga Classes</h1>
+				<h2>Sales by month</h2>
+				<div class="bar-graph">
+					<img src="images/bar-graph.png" alt="Sales by month"/>
+				</div><!--end of bar graph div-->
+				<div class="total-monthly-sales">
+					<ul>
+						<li>Total Monthly</li>
+						<li>Sales</li>
+					</ul>
+					<ul>
+						<li>Current</li>
+						<li class="current">&#36;23,483</li>
+					</ul>
+					<ul>
+						<li>1-Year</li>
+						<li><img src="images/spark_line.png" alt="1-Year"/></li>
+					</ul>
+				</div><!--end of total monthly sales div-->
+				<a href="#" id="program1-show" class="showLink" 
+					onclick="showHide('program1');return false;">more</a>
+					</p>
+					<div id="program1" class="more">
+						<ul class="left">
+							<li class="title">Price Name</li>
+							<li>Monthly Unlimi...</li>
+							<li>Student 1 mont...</li>
+							<li>Single Visit</li>
+							<li>10 class pass</li>
+							<li>Student Single...</li>
+							<li>20 class pass</li>
+							<li>5 class pass</li>
+						</ul>
+						<ul class="middle">
+							<li>Current</li>
+							<li>&#36;4,260</li>
+							<li>&#36;1,750</li>
+							<li>&#36;560</li>
+							<li>&#36;475</li>
+							<li>&#36;445</li>
+							<li>&#36;230</li>
+							<li>&#36;520</li>
+						</ul>
+						<ul class="right">
+							<li>1-Year</li>
+							<li><img src="images/spark_lines.png" alt="1-Year"/></li>
+						</ul>
+							<!--less link-->
+							<p><a href="#" id="program1-hide" class="hideLink" 
+							onclick="showHide('program1');return false;">less</a></p>
+					</div><!--end of more div-->
+			</div><!--end of first program div-->
+			<div class="program">
+				<a href="#edit">
+					<div class="pencil-button">
+					</div>
+				</a>
+				<h1>Yoga Privates</h1>
+				<h2>Sales by month</h2>
+				<div class="bar-graph">
+					<img src="images/bar-graph.png" alt="Sales by month"/>
+				</div><!--end of bar graph div-->
+				<div class="total-monthly-sales">
+					<ul>
+						<li>Total Monthly</li>
+						<li>Sales</li>
+					</ul>
+					<ul>
+						<li>Current</li>
+						<li class="current">&#36;23,483</li>
+					</ul>
+					<ul>
+						<li>1-Year</li>
+						<li><img src="images/spark_line.png" alt="1-Year"/></li>
+					</ul>
+				</div><!--end of total monthly sales div-->
+				<a href="#" id="program2-show" class="showLink" 
+					onclick="showHide('program2');return false;">more</a>
+					</p>
+					<div id="program2" class="more">
+						<ul class="left">
+							<li class="title">Price Name</li>
+							<li>Monthly Unlimi...</li>
+							<li>Student 1 mont...</li>
+							<li>Single Visit</li>
+							<li>10 class pass</li>
+							<li>Student Single...</li>
+							<li>20 class pass</li>
+							<li>5 class pass</li>
+						</ul>
+						<ul class="middle">
+							<li>Current</li>
+							<li>&#36;4,260</li>
+							<li>&#36;1,750</li>
+							<li>&#36;560</li>
+							<li>&#36;475</li>
+							<li>&#36;445</li>
+							<li>&#36;230</li>
+							<li>&#36;520</li>
+						</ul>
+						<ul class="right">
+							<li>1-Year</li>
+							<li><img src="images/spark_lines.png" alt="1-Year"/></li>
+						</ul>
+							<!--less link-->
+							<p><a href="#" id="program2-hide" class="hideLink" 
+							onclick="showHide('program2');return false;">less</a></p>
+					</div><!--end of more div-->
+			</div><!--end of second program div-->
+			<div class="program">
+				<a href="#edit">
+					<div class="pencil-button">
+					</div>
+				</a>
+				<h1>Yoga Duets</h1>
+				<h2>Sales by month</h2>
+				<div class="bar-graph">
+					<img src="images/bar-graph.png" alt="Sales by month"/>
+				</div><!--end of bar graph div-->
+				<div class="total-monthly-sales">
+					<ul>
+						<li>Total Monthly</li>
+						<li>Sales</li>
+					</ul>
+					<ul>
+						<li>Current</li>
+						<li class="current">&#36;23,483</li>
+					</ul>
+					<ul>
+						<li>1-Year</li>
+						<li><img src="images/spark_line.png" alt="1-Year"/></li>
+					</ul>
+				</div><!--end of total monthly sales div-->
+				<a href="#" id="program3-show" class="showLink" 
+					onclick="showHide('program3');return false;">more</a>
+					</p>
+					<div id="program3" class="more">
+						<ul class="left">
+							<li class="title">Price Name</li>
+							<li>Monthly Unlimi...</li>
+							<li>Student 1 mont...</li>
+							<li>Single Visit</li>
+							<li>10 class pass</li>
+							<li>Student Single...</li>
+							<li>20 class pass</li>
+							<li>5 class pass</li>
+						</ul>
+						<ul class="middle">
+							<li>Current</li>
+							<li>&#36;4,260</li>
+							<li>&#36;1,750</li>
+							<li>&#36;560</li>
+							<li>&#36;475</li>
+							<li>&#36;445</li>
+							<li>&#36;230</li>
+							<li>&#36;520</li>
+						</ul>
+						<ul class="right">
+							<li>1-Year</li>
+							<li><img src="images/spark_lines.png" alt="1-Year"/></li>
+						</ul>
+							<!--less link-->
+							<p><a href="#" id="program3-hide" class="hideLink" 
+							onclick="showHide('program3');return false;">less</a></p>
+					</div><!--end of more div-->
+			</div><!--end of third program div-->
+
+			<!--All programs at bottom of page-->
+			<div class="all-programs">
+				<ul class="top">
+					<li>All Programs</li>
+					<li style="font-size: .65em;">Monthly Sales</li>
+					<li style="font-size: .65em;">Monthly Attendance</li>
+				</ul>
+				<ul>
+					<li style="padding-right: 23px;">Open Practice</li>
+					<li style="padding-right: 51px;">&#36;572.00</li>
+					<li>276<em> visits</em></li>
+				</ul>
+				<a href="#more">more</a>
+				<ul>
+					<li style="padding-right: 32px;">Yoga Videos</li>
+					<li style="padding-right: 51px;">&#36;391.32</li>
+					<li>82<em> views</em></li>
+				</ul>
+				<a href="#more">more</a>
+			</div><!--end of all programs div-->
+
+			<!--Add New Program Form-->
+		<div id="lightbox-panel">
+				<form id="form" class="form" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+			<div id="exit">
+				<a href="#">x</a>
+			</div>
+		    <h1>Add New Program</h1>
+		    <div class="content">
+		        <div class="intro"></div>
+		        <div id="section0" >
+		            <div class="field"><label for="program-type">Program Type</label><select id="program-type" name="program-type" required><option value>Count Series</option><option value>Time Series</option><option value>Membership</option></select></div>
+		            <div class="field"><div class="edit-options"><div class="edit"></div><div class="delete"></div></div><label for="program-name">Program Name</label><input type="text" id="program-name" name="program-name" placeholder="ex: Power Yoga" required></div>
+		            <div class="field"><label for="online-scheduling">Allow online scheduling?</label><span>Yes</span><input type="radio" value="radio" id="online-scheduling" name="online-scheduling" required><span>No</span><input type="radio" value="radio" id="online-scheduling" name="online-scheduling" required></div>
+		            <div class="field"><label for="default-capacity">Default Capacity</label><input type="number" id="default-capacity" name="default-capacity" placeholder="ex: 30" required></div>
+		            <div class="field"><label for="tabs">Tabs this program is on:</label><span>Classes</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"><span>Appointments</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"><span>Workshops</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"><span>Outside</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"><span>Inside</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"><span>Gym</span><input type="checkbox" value="checkbox" id="tabs" name="tabs"></div>
+		            <div class="field"><p align="center"><a id="close-panel" href="#">Add Program</a></p></div>
+		        </div>
+	    	</div>
+		</form> 
+	</div><!--end of lightbox-panel -->
+	<div id="lightbox"></div>
+	<!--end of lightbox -->
+
+		</div><!--end of main-content div-->
+	</div><!--end of main-container div-->
+
+	<script type="text/javascript">
+
+			//Js for the more and less buttons
+			function showHide(shID) {
+			if (document.getElementById(shID)) {
+				if (document.getElementById(shID+'-show').style.display != 'none') {
+					document.getElementById(shID+'-show').style.display = 'none';
+					document.getElementById(shID).style.display = 'block';
+				}
+				else {
+					document.getElementById(shID+'-show').style.display = 'inline';
+					document.getElementById(shID).style.display = 'none';
+				}
+			}
+		}
+
+			//Js for lightbox
+			$(document).ready(function(){
+			  $("a#show-panel").click(function(){
+			    $("#lightbox, #lightbox-panel").fadeIn(300);
+			  });
+			    $("a#close-panel, #exit").click(function(){
+			    $("#lightbox, #lightbox-panel").fadeOut(300);
+			  })
+			});
+
+</script>
+</body>
+</html>
